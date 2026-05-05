@@ -301,7 +301,6 @@ function M.open_ui()
 
   local first_session_line = render_ui()
 
-  -- Move cursor to first session
   local target = (first_session_line or (#HEADER + 4)) 
   local line_count = vim.api.nvim_buf_line_count(buf)
   if target <= line_count then
